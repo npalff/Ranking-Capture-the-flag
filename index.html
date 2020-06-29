@@ -75,8 +75,14 @@ document.getElementById("RelatorioHZ").innerHTML = "*HZAH*<br>"+
 "<br>*Saldo Total: "+saldoTotalHZ+"*";
 
 
-if(saldoTotalAP>saldoTotalHZ){document.getElementById("melhor").innerHTML = "DAAPAA está na frente!!!";}
-else {document.getElementById("melhor").innerHTML = "HZAH está na frente.";}
+if(saldoTotalAP>saldoTotalHZ){
+  document.getElementById("melhor").innerHTML = "DAAPAA está na frente!!!<br><br>link para o site: https://npalff.github.io/Ranking-Capture-the-flag/";
+}
+else if(saldoTotalAP<saldoTotalHZ){
+  document.getElementById("melhor").innerHTML = "HZAH está na frente.<br><br>link para o site: https://npalff.github.io/Ranking-Capture-the-flag/";
+}
+else {
+  document.getElementById("melhor").innerHTML = "Está empatado!<br><br>link para o site: https://npalff.github.io/Ranking-Capture-the-flag/";}
 
 }
 
