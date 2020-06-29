@@ -75,8 +75,14 @@ document.getElementById("RelatorioHZ").innerHTML = "*HZAH*<br>"+
 "<br>*Saldo Total: "+saldoTotalHZ+"*";
 
 
-if(saldoTotalAP>saldoTotalHZ){document.getElementById("melhor").innerHTML = "DAAPAA está na frente!!!";}
-else {document.getElementById("melhor").innerHTML = "HZAH está na frente.";}
+if(saldoTotalAP>saldoTotalHZ){
+  document.getElementById("melhor").innerHTML = "DAAPAA está na frente!!!<br><br>link para o site: https://npalff.github.io/Ranking-Capture-the-flag/";
+}
+else if(saldoTotalAP<saldoTotalHZ){
+  document.getElementById("melhor").innerHTML = "HZAH está na frente.<br><br>link para o site: https://npalff.github.io/Ranking-Capture-the-flag/";
+}
+else {
+  document.getElementById("melhor").innerHTML = "Está empatado!<br><br>link para o site: https://npalff.github.io/Ranking-Capture-the-flag/";}
 
 }
 
@@ -84,9 +90,7 @@ else {document.getElementById("melhor").innerHTML = "HZAH está na frente.";}
 <br><br>
 Para criar o relatório insira os dados e clique em Enviar.<br>
 Depois basta copiar e colar no grupo do whatsapp, as marcações de negrito e itálico já estão prontas.
-<br>
-<h3><b>Relatório:</b></h3>
-<br> <br> <br>
+<br><br><br>
 
 *Ranking do Capture a Bandeira*
 
